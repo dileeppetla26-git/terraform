@@ -10,3 +10,9 @@ resource "aws_instance" "dileep" {
     Name = "hcp"
   }
 }
+
+
+resource "aws_s3_bucket" "diellp-buck" {
+  bucket     = "terraformbucketabcd12453"
+  depends_on = [aws_instance.dileep]
+}
