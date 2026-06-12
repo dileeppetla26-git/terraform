@@ -12,7 +12,7 @@ resource "aws_instance" "dileep" {
 }
 
 
-/*resource "aws_s3_bucket" "diellp-buck" {
+resource "aws_s3_bucket" "diellp-buck" {
   bucket     = "terraformbucketabcd12453"
   depends_on = [aws_instance.dileep]
-}*/
+}
